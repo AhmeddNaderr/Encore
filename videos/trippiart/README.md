@@ -1,36 +1,36 @@
-# Trippi · Spot Dispatch
+# Trippi · Last Train Town
 
-An unofficial Encore Studio offer film for [Trippi (@trippiart)](https://x.com/trippiart). It shows collab management and KOL management for their free mint on Robinhood, with every partner and KOL paid in WL/GTD spots and $0 cash. The style follows Trippi's own CCTV post (green security-terminal boot, REC timestamp feeds, rainy Exit B stairs and speech bubbles) and uses Trippi's art, lore and colours.
+An unofficial Encore Studio game concept for [Trippi (@trippiart)](https://x.com/trippiart). Trippi Town lives on the last train of the night: a cosy cutaway builder where every carriage is a business, the oddballs ride with you, and the goal is to make the 23:09 to Platform 09.
 
 ## Downloads
 
-- [Main video — 53 seconds, 1080×1080, 60fps, 53.8 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/trippiart/Trippi-Spot-Dispatch-Encore.mp4)
-- [Web copy for X — 53 seconds, 1080×1080, 60fps, 21.3 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/trippiart/Trippi-Spot-Dispatch-Encore-web.mp4)
-- [Poster frame](Trippi-Spot-Dispatch-poster.jpg)
-- [Source package — film code, cut-out art, fonts and licences, score script, cue list and render scripts](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/trippiart/Trippi-Spot-Dispatch-sources.zip)
+- [Main video — 46 seconds, 1080×1080, 60fps, 45.9 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/trippiart/Trippi-Last-Train-Town-Encore.mp4)
+- [Web copy for X — 46 seconds, 1080×1080, 60fps, 17.8 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/trippiart/Trippi-Last-Train-Town-Encore-web.mp4)
+- [Poster frame](Trippi-Last-Train-Town-poster.jpg)
+- [Source package — game film code, cut-out art, fonts and licences, score script, cue list and render scripts](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/trippiart/Trippi-Last-Train-Town-sources.zip)
 
-Both MP4s contain H.264 video (BT.709), stereo AAC audio normalised to −14 LUFS, and faststart metadata. All 3,180 frames were decoded without errors.
+Both MP4s contain H.264 video (BT.709), stereo AAC audio normalised to −14 LUFS, and faststart metadata. All 2,760 frames were decoded without errors.
 
-## Story beats
+## The game
 
-| Time | Scene |
-| --- | --- |
-| 0:00–0:05 | Trippi Transit Control boots up: spot vault 300, cash budget $0, collab and KOL lines offline. Encore logs in and gets ACCESS GRANTED. |
-| 0:05–0:13 | CAM 09 · Platform 09. The Trippi train pulls in. Mushroom: "Free mint. 1,999 of us. And nobody outside town knows we exist." Honey: "We've got spots. We've got zero budget." Cone: "Bro... spots ARE the budget." |
-| 0:13–0:31 | **Spot Dispatch**, the game. A Trippi transit map with a full HUD: spot vault, cash spent, reach, WL applications, a quest tracker, a dispatch log, a hotbar of spot stamps (the cash slot is locked) and a minimap. **01 Collab management**: trains carry GTD spots to eight partner communities, and the Partner 03 deal card is stamped "PAID IN SPOTS". **02 KOL management**: twelve KOLs on a ring line get WL spots, with a sample KOL post that is tracked live. Ends on "CASH SPENT: $0". |
-| 0:31–0:39 | CAM 03 · Exit B. A crowd with WL/GTD tickets comes down the stairs in the rain. "Partner crews. KOL followers. All paid in spots." / "And we spent... nothing?" |
-| 0:39–0:46 | The offer as a Trippi Transit ticket: Encore × Trippi, collab management plus KOL management, partners paid in WL/GTD spots, cash $0. Closes on "COLLECT THE ODD. We'll bring the crowd. You keep the cash." |
-| 0:46–0:53 | Encore end card: "Collab + KOL management. Paid in spots, not cash." Book a call. |
+- **Your town is a train.** A dollhouse cutaway of a night train rolling across Trippi's graffiti city on an elevated line. The cars are the Graffiti Studio (Mushroom painting the Trippi piece), the Honey Bar (Honey behind the counter), the Arcade (Wolf on the cabinets), the Last Stop Lounge (Axolotl dancing by the record player) and the Line 01 cab (Cone driving).
+- **Gather → spend → build.** Tap the cars to collect paint, honey and tickets, which fly into the counters. Spend 300 paint and 200 honey to build the **Pet Daycare**: scaffolding, sparks, Cone as foreman in a hard hat, and the car rising into place with Trippi's virtual-pet devices on the walls.
+- **Stations.** The train brakes into Rush Hour, the doors chime, and the waiting crowd boards: 64 crew becomes 192.
+- **Bot raid.** A like-farming drone drops bots onto the roof. Fight back with crew powers: **Cone Wall** blocks them, **Honey Trap** sticks them, **Spore Bounce** launches them off the train (an x8 combo). "Bots can like a post. They can't board this train."
+- **Make the 23:09.** A hero shot of the whole train crossing the river bridge under fireworks.
+- **Weekly crew board.** Your crew climbs from #12 to #4. The top 50 crews earn GTD and the next 200 earn WL. Then a shareable run card and "Runs on any phone."
+
+The full HUD is drawn in Trippi's sticker style: resource pills, stamps, the clock, a route bar (Rush Hour → Night Train → Last Stop → Platform 09), quests, a build tray with locked cars, crew-power buttons with cooldowns, a minimap and a tap cursor.
 
 ## How it was made
 
-The film is a single deterministic canvas timeline (`film/film.js`), rendered frame by frame in headless Chromium in four parallel chunks. The art comes from Trippi's X profile and trippi.fun: the logo, train, bench, cone, streetlight, postmark stamps, FCFS pass and banner. The mushroom and honey-bucket characters were cut from their site art. Fonts are Geist, Geist Mono, Doto, Poppins and VT323, all under the OFL, with licences in the source package.
+The film is a single deterministic canvas timeline (`game/game.js`), rendered frame by frame in headless Chromium in four parallel chunks. The art comes from Trippi's X profile and trippi.fun: the logo, train, cone, stamps, flower PFP and virtual-pet devices. Mushroom and Honey were cut from their site art, and Axolotl and Wolf were cut from the screens of their virtual-pet NFT art. The background oddballs are drawn in code to match Trippi's bold-outline style. Fonts are Poppins, Geist and Geist Mono, all under the OFL, with licences in the source package.
 
-The sound is original. The 96 BPM lo-fi beat (in A minor) and every effect (CRT keys, train rumble and brakes, rain, UI blips, coin dings, stamp hits, the end chime) are synthesised from oscillators and seeded noise in `audio.py`, timed to the film's own cue list (`events.json`). No third-party music or samples are used.
+The sound is original. The 100 BPM beat and every effect are synthesised from oscillators and seeded noise in `audio.py`, timed to the film's own cue list (`events.json`). No third-party music or samples are used.
 
 ## Review status and credits
 
-This is a review cut. All partners and KOLs are unnamed placeholders, and every number on screen (reach, applications, crowd count, post metrics) is labelled sample data.
+This is a review cut. Leaderboard crews and every number on screen are sample data.
 
 Original character and world art: [Trippi / @trippiart](https://x.com/trippiart), [trippi.fun](https://trippi.fun).
 
