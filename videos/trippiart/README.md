@@ -4,8 +4,8 @@ An unofficial Encore Studio game concept for [Trippi (@trippiart)](https://x.com
 
 ## Downloads
 
-- [Main video — 46 seconds, 1080×1080, 60fps, 45.9 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/trippiart/Trippi-Last-Train-Town-Encore.mp4)
-- [Web copy for X — 46 seconds, 1080×1080, 60fps, 17.8 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/trippiart/Trippi-Last-Train-Town-Encore-web.mp4)
+- [Main video — 46 seconds, 1080×1080, 60fps, 71.7 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/trippiart/Trippi-Last-Train-Town-Encore.mp4)
+- [Web copy for X — 46 seconds, 1080×1080, 60fps, 27.3 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/trippiart/Trippi-Last-Train-Town-Encore-web.mp4)
 - [Poster frame](Trippi-Last-Train-Town-poster.jpg)
 - [Source package — game film code, cut-out art, fonts and licences, score script, cue list and render scripts](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/trippiart/Trippi-Last-Train-Town-sources.zip)
 
@@ -24,7 +24,9 @@ The full HUD is drawn in Trippi's sticker style: resource pills, stamps, the clo
 
 ## How it was made
 
-The film is a single deterministic canvas timeline (`game/game.js`), rendered frame by frame in headless Chromium in four parallel chunks. The art comes from Trippi's X profile and trippi.fun: the logo, train, cone, stamps, flower PFP and virtual-pet devices. Mushroom and Honey were cut from their site art, and Axolotl and Wolf were cut from the screens of their virtual-pet NFT art. The background oddballs are drawn in code to match Trippi's bold-outline style. Fonts are Poppins, Geist and Geist Mono, all under the OFL, with licences in the source package.
+The film is a single deterministic canvas timeline (`game/game.js` for gameplay and HUD, `game/art.js` for the art pass), rendered frame by frame in headless Chromium in four parallel chunks.
+
+The art pass adds a three-layer parallax night city (lit windows, water towers, neon signs and billboards showing Trippi's own stamps and logo), a brick viaduct with shopfronts under the arches, a truss bridge with string lights over a reflective river, overhead wires with lamp posts, and a tiled Rush Hour station. The train has roof air-conditioning units, pantographs that spark on the wire, detailed bogies and lit interiors with ceiling lights and grab handles. Finishing is done in code too: bloom on every light, motion blur on passing scenery, a teal-and-pink colour grade, rain with roof splashes, and film grain. The art comes from Trippi's X profile and trippi.fun: the logo, train, cone, stamps, flower PFP and virtual-pet devices. Mushroom and Honey were cut from their site art. Axolotl and Wolf were cut from the screens of their virtual-pet NFT art, and they and Cone were re-traced as vectors so they stay sharp at film size. The background oddballs are drawn in code to match Trippi's bold-outline style. Fonts are Poppins, Geist and Geist Mono, all under the OFL, with licences in the source package.
 
 The sound is original. The 100 BPM beat and every effect are synthesised from oscillators and seeded noise in `audio.py`, timed to the film's own cue list (`events.json`). No third-party music or samples are used.
 
