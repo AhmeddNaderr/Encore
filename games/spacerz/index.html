@@ -322,7 +322,7 @@ function resize() {
   BW = Math.ceil(dw / PXD); BH = Math.ceil(dh / PXD);
   buf.width = BW; buf.height = BH;
   KB = BW / W;
-  VS = clamp(Math.sqrt(W * H) / 980, 0.62, 1.2);
+  VS = clamp(Math.sqrt(W * H) / 980, 0.62, 1.2) * (window.__zoom || 1);
   WS = VS * KB; PXW = 1 / WS;
   const cs = getComputedStyle(document.getElementById('safe'));
   inset.t = parseFloat(cs.paddingTop) || 0; inset.r = parseFloat(cs.paddingRight) || 0; inset.b = parseFloat(cs.paddingBottom) || 0; inset.l = parseFloat(cs.paddingLeft) || 0;
@@ -1931,7 +1931,7 @@ $('muteWave').toggleAttribute('hidden', Snd.muted); $('muteX').toggleAttribute('
 document.addEventListener('pointerdown', () => Snd.init(), { once: true });
 
 // debug/test hook
-window.SPZ = { G, get P() { return P; }, enemies: () => enemies, boss: () => { if (G.state === 'play') { G.wave = 4; G.waveBudget = 0; enemies.forEach(e => e.dead = true); G.restT = 0; startBoss(); G.bossIncoming = .1; } }, level: () => { if (P) { G.xp = G.xpNext; collect({ k: 'xp', v: 0 }); } }, nova: () => { if (P) P.nova = 1; }, sprite: (id, size = 60) => pixelSpacer(spacerTraits(id), size, true).toDataURL() };
+window.SPZ = { G, get P() { return P; }, enemies: () => enemies, boss: () => { if (G.state === 'play') { G.wave = 4; G.waveBudget = 0; enemies.forEach(e => e.dead = true); G.restT = 0; startBoss(); G.bossIncoming = .1; } }, level: () => { if (P) { G.xp = G.xpNext; collect({ k: 'xp', v: 0 }); } }, nova: () => { if (P) P.nova = 1; }, sprite: (id, size = 60) => pixelSpacer(spacerTraits(id), size, true).toDataURL(), keys, input, ebul: () => ebul, pickups: () => pickups, snd: Snd, start: startRun, choose: i => chooseMod(i), setSpacer: id => { selId = id; refreshTitle(); }, cam };
 
 resize(); setSectorLook(1); refreshTitle();
 requestAnimationFrame(frame);
