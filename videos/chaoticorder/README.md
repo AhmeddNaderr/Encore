@@ -4,12 +4,12 @@ A 64-second unofficial launch-system concept by Encore Studio for [@Chaoticorder
 
 ## Downloads
 
-- [Main video: 64 seconds, 1920×1080, 60fps, 42.7 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/chaoticorder/ChaoticOrder-Growth-Kitchen.mp4)
-- [Smaller version: 1280×720, 30fps, 15.5 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/chaoticorder/ChaoticOrder-Growth-Kitchen-720p.mp4)
+- [Main video: 64 seconds, 1920×1080, 60fps, 40.4 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/chaoticorder/ChaoticOrder-Growth-Kitchen.mp4)
+- [Smaller version: 1280×720, 30fps, 14.1 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/chaoticorder/ChaoticOrder-Growth-Kitchen-720p.mp4)
 - [Source package: the animated HTML build, score generator and render scripts](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/chaoticorder/ChaoticOrder-Growth-Kitchen-sources.zip)
 - Stills of each screen: [`stills/`](stills/)
 
-Both MP4s contain H.264 video, stereo AAC audio (−14 LUFS) and faststart metadata. Frame counts were checked (3,840 and 1,920) and both files decode fully without errors. The links above work once this folder is on `main`.
+Both MP4s are silent: they contain H.264 video only (no audio track), with faststart metadata. Frame counts were checked (3,840 and 1,920) and both files decode fully without errors. The links above work once this folder is on `main`.
 
 ## What is in the video
 
@@ -22,7 +22,7 @@ Both MP4s contain H.264 video, stereo AAC audio (−14 LUFS) and faststart metad
 | 0:44 | 04 Dining Room · Discord | A server blueprint: kitchen-themed channels and roles, a "Pick your chef" crew picker using the four official chefs, and collab tickets posted from the CRM with a live entry count. |
 | 0:56 | End card | Official key art, the four stations, "Concept by Encore Studio". |
 
-Captions carry the whole pitch, so it reads with the sound off.
+Captions carry the whole pitch, so it reads without sound.
 
 ## Sources and honesty notes
 
@@ -30,6 +30,6 @@ Captions carry the whole pitch, so it reads with the sound off.
 - All character art, the key art and the profile picture are Chaotic Order's own files, used unedited apart from cropping. Typefaces match the site: Lilita One and Nunito (both SIL Open Font License).
 - **Every partner project, KOL, Discord user, handle and number in the tools is sample data.** No real project, KOL or person is shown, and nothing here reports real results. Targets in the campaign funnel are illustrative, not a forecast or a promise.
 - The tracking-link format, role names, campaign names and server layout are Encore's proposals, not existing Chaotic Order features.
-- Music and sound effects are original, synthesised in code for this video. No samples or third-party audio.
+- The delivered videos have no audio. The source package still contains the original synthesised score (`audio.py`) if a soundtrack is wanted later.
 
 Unofficial concept by Encore Studio. Not affiliated with or endorsed by Chaotic Order. Chaotic Order characters, artwork and branding belong to their respective owners. No social post, DM or project contact was made.
