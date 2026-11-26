@@ -6,11 +6,11 @@ An unofficial Encore Studio game concept video for [Zenko (@Zenko_NFT)](https://
 
 ## Downloads
 
-- [Main video: 44 seconds, 1920×1080, 60 fps, 42.7 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/zenko/Zenko-Panel-Cut-main.mp4)
-- [Vertical video for X: 15 seconds, 1080×1920, 60 fps, 17.3 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/zenko/Zenko-Panel-Cut-15s.mp4)
+- [Main video: 44 seconds, 1920×1080, 60 fps, silent, 41.2 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/zenko/Zenko-Panel-Cut-main.mp4)
+- [Vertical video for X: 15 seconds, 1080×1920, 60 fps, silent, 16.8 MB](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/zenko/Zenko-Panel-Cut-15s.mp4)
 - [Source package: renderer, game simulation, planner, score, research and storyboard](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/zenko/Zenko-Panel-Cut-sources.zip)
 
-Both MP4s are H.264 High (yuv420p, BT.709) with stereo AAC audio at 48 kHz and faststart. The audio is mastered to about −15.8 LUFS. Exact frame counts (2640 and 900), a full decode and freeze detection were checked, and hashes are in [SHA256SUMS](SHA256SUMS). Self-review scores and their limits are in [the quality report](quality_report.md).
+Both MP4s are H.264 High (yuv420p, BT.709) with faststart and are **silent, with no audio track**. Exact frame counts (2640 and 900), a full decode and freeze detection were checked, and hashes are in [SHA256SUMS](SHA256SUMS). Self-review scores and their limits are in [the quality report](quality_report.md).
 
 ## The game
 
@@ -30,7 +30,7 @@ Why it's Zenko's: it uses all three pillars of the project at once. The page is 
 
 - **Their art only.** Every character, panel, logo and card back comes from Zenko's own posts at full resolution: the banner Shonen, the Shojo kunoichi, Nero, the katana and scythe portraits, their official greyscale manga page, their TCG card frame (coral with a notched corner, purple for the legendary) and their ink-swirl card backs. Faces are never redrawn; portraits only get background removal and are cropped into panels. The anomalies are original game sprites in Zenko's red-black Resonance palette. Source URLs and hashes are in `art_sources.csv` inside the source package.
 - **Real gameplay simulation, not a slideshow.** A deterministic physics simulation (convex panel splitting with gutters, bouncing anomalies, growing cut lines, break and seal rules) plays a planned "skilled run". A planner searches cut timings and angles for each beat (near-miss seals, a deliberate break, the Shojo double seal, the Nero pull, the burst). Every frame is rendered from that simulation at 60 fps.
-- **Original audio.** A 140 BPM anime-trap and taiko score in the Japanese In scale (koto and shamisen by Karplus-Strong synthesis, taiko, 808, pads), plus event-synced sound effects for every cut, seal, break and card. Everything is synthesized from oscillators and seeded noise, with no samples or third-party music.
+- **Silent by design.** The videos have no sound and every beat reads through on-screen captions and manga sound-effect lettering. An earlier version had an original synthesized score; its generator, `compose.py`, is still in the source package.
 - **Current Encore brand.** The end card uses Encore's current identity: the chrome mascot (redrawn as a vector from the official avatar), the "encore" wordmark from the official banner, and the slogan **"Every launch deserves an encore."**
 
 ## Credits and status
