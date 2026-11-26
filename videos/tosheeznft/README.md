@@ -15,10 +15,10 @@ Satoshi is back after more than a decade away. The space has mutated, so he hide
 
 ## Downloads
 
-- [Main film: 44 s, 1920×1080, 60 fps, 41.7 MB](Tosheez-Nobody-Knows.mp4)
-- [Source package (62.2 MB): trailer engine, extracted trait layers, art pipeline, score and research](Tosheez-Nobody-Knows-sources.zip)
+- [Main film: 44 s, 1920×1080, 60 fps, 42.2 MB](Tosheez-Nobody-Knows.mp4)
+- [Source package (62.9 MB): trailer engine, extracted trait layers, art pipeline, score and research](Tosheez-Nobody-Knows-sources.zip)
 
-The MP4 contains H.264 video and stereo AAC audio (48 kHz, about −16 LUFS), with faststart. The exact frame count (2,640) and a full audio/video decode were verified. Checksums are in `SHA256SUMS`.
+The MP4 contains H.264 video and stereo AAC audio (48 kHz, about −16.7 LUFS), with faststart. The exact frame count (2,640) and a full audio/video decode were verified. Checksums are in `SHA256SUMS`.
 
 ## Film structure
 
@@ -33,7 +33,7 @@ The MP4 contains H.264 video and stereo AAC audio (48 kHz, about −16 LUFS), wi
 | 24–28 s | WL leaderboard (sample data): "Bots can like a post. They can't hide in plain sight." |
 | 28–32 s | Result card → X post mock-up (nothing was posted) |
 | 32–36 s | "7,021 looks. Nobody knows which one is him." The hunter's glass irises to black. |
-| 36–44 s | Encore Studio end card: *One crew for your whole launch.* |
+| 36–44 s | Encore end card in the new Encore Brand Kit: chrome lockup, the crew, *Every launch deserves an encore.*, Book a call |
 
 ## How the art was made
 
@@ -44,8 +44,8 @@ Gameplay footage is rendered by a deterministic canvas engine: trend waves, hunt
 ## Sources and credits
 
 - Character art, trait art, wordmark and lore lines: [Tosheez / @TosheezNFT](https://x.com/TosheezNFT) public posts (Nov 2026), plus portraits posted by @HomerCarbone. Source URLs are listed in the source package (`research/sources.csv`).
-- Fonts: Inter Tight and JetBrains Mono (SIL Open Font License; licences included).
-- Music and sound effects: original, synthesized in code for this film (`audio/compose.py`). No samples or third-party recordings.
-- Encore Studio mark and slogan: taken from the existing Encore end cards in this repository.
+- Fonts: Inter Tight and JetBrains Mono for the game UI; Geist, Geist Mono and Doto for the Encore end card. All are under the SIL Open Font License, with licences included.
+- Music: an original score (a 120 BPM swung spy-jazz caper in D minor) written for this film. It is played by sampled instruments from [GeneralUser GS v2.0.3](https://github.com/mrbumpy409/GeneralUser-GS) by S. Christian Collins (free for commercial use), rendered with FluidSynth. Sound effects are woodblock, vibraphone, celeste and pizzicato from the same bank, plus a synthesized camera shutter and air whooshes. Nothing is AI-generated.
+- Encore lockup, crew art, palette, Geist type and slogan: from the Encore Brand Kit (November 2026).
 
 Unofficial concept by Encore Studio. Not affiliated with or endorsed by Tosheez. Tosheez characters and art © Tosheez. The leaderboard uses sample handles, and the X post is a mock-up. No social post, DM or project contact was made.
