@@ -16,6 +16,7 @@ Satoshi is back after more than a decade away. The space has mutated, so he hide
 ## Downloads
 
 - [Main film: 44 s, 1920×1080, 60 fps, 42.2 MB](Tosheez-Nobody-Knows.mp4)
+- [Outreach brief for grokbot](OUTREACH.md): facts, two-line description, angles and voice rules
 - [Source package (62.9 MB): trailer engine, extracted trait layers, art pipeline, score and research](Tosheez-Nobody-Knows-sources.zip)
 
 The MP4 contains H.264 video and stereo AAC audio (48 kHz, about −16.7 LUFS), with faststart. The exact frame count (2,640) and a full audio/video decode were verified. Checksums are in `SHA256SUMS`.
