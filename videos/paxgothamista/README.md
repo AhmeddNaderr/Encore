@@ -1,29 +1,41 @@
 # Pax Gothamista · Reborn by Dawn
 
-An unofficial Encore Studio game concept trailer for Pax Gothamista, made from their own art. Pax Gothamista is the cemetery town where the dead have a little more living to do.
-
-**The game:** souls are falling into Mort the Intern's hands. File each one into the grave that matches her personality and she rises reborn: the winged skull for Falon, the thorn-wrapped stone for Odette, the flower arch for Vera, the skull crown for Morticia and the broken slab for Rowena. A wrong grave spills one of Mort's five coffees. Raise all five at once for *The Gothly Departed*, keep a 15-streak to raise a 1/1, and get everyone up before the sun.
+An unofficial Encore Studio game concept for Pax Gothamista: **a playable Three.js game built from their own art**, plus a trailer captured from it.
 
 > *Buried in one world. Reborn in another.*
 
-![Reborn by Dawn — all five risen](poster.jpg)
+![Reborn by Dawn](poster.jpg)
+
+## The game
+You fly **Mort the Intern** through their cemetery town.
+- Catch falling souls; Mort carries three in a glowing chain.
+- Fly over the grave with the matching emblem to raise that girl. The winged skull is Falon's, the thorn-wrapped stone Odette's, the flower arch Vera's, the skull crown Morticia's and the broken slab Rowena's.
+- **Every girl you raise grants her power:**
+  - Morticia, *Drop Dead Gorgeous*: score ×2
+  - Vera, *Heartstrings*: soul magnet
+  - Odette, *Thorn Veil*: a thorn ring that shreds bots
+  - Falon, *Halo Hour*: slow-mo
+  - Rowena, *Bad Influence*: bots turn into souls
+- Grey **like-bots** hunt you and steal souls. Spin the scythe to banish them, because bots can like a post, but they can't raise the dead.
+- Mort's five coffees are your lives; catch falling cups to refill.
+- Raise all five at once for *The Gothly Departed*. The rare spiral soul raises their 1/1, Bella Saw.
+- The shift ends at dawn, with an Orbituary card, a sample WL leaderboard and a copyable result.
 
 ## Downloads
+- [Play it: one self-contained HTML file](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/paxgothamista/RebornByDawn-play.html). Download it and open it in a browser.
+- [Game folder](game/): Three.js source, engine, assets and build ([how to run](game/GAME-README.md)).
+- [Trailer: 45 s, 1920×1080, 60 fps](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/paxgothamista/PaxGothamista-Reborn-by-Dawn-3D-main.mp4)
+- [Trailer: 720p](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/paxgothamista/PaxGothamista-Reborn-by-Dawn-3D-720p.mp4)
+- [X cut: 15 s, 1080×1920, 60 fps](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/paxgothamista/PaxGothamista-Reborn-by-Dawn-3D-15s.mp4)
+- The earlier 2D animatic is kept in `v1-2d/`.
 
-- [Main video: 45 s, 1920×1080, 60 fps](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/paxgothamista/PaxGothamista-Reborn-by-Dawn-main.mp4)
-- [Smaller main video: 720p](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/paxgothamista/PaxGothamista-Reborn-by-Dawn-720p.mp4)
-- [X cut: 15 s, 1080×1920, 60 fps](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/paxgothamista/PaxGothamista-Reborn-by-Dawn-15s.mp4)
-- [Source package: game engine, renderer, score, research, art bible](https://github.com/AhmeddNaderr/Encore/raw/refs/heads/main/videos/paxgothamista/PaxGothamista-Reborn-by-Dawn-sources.zip)
+## How it's built
+- **Their art in 3D.** Their Deathly Offerings cemetery is a depth-warped background plate, and its five blank tombstones are cut out onto their own planes. The girls rise between them and Mort flies in front, all with parallax camera moves.
+- **Live lighting on the 2D art.** Normal maps are generated from the official PNGs. Every soul carries a coloured light that sweeps across the stones, rising girls are underlit by their grave, and there is moonlight plus a warm dawn key.
+- **Post and effects.** Bloom, moon god rays, chromatic aberration on hits, a night→dawn grade, film grain, GPU particles, fog, bats, clouds, lightning and power auras.
+- **One engine everywhere.** The trailer is captured frame-exactly from the real game engine played by its autopilot; no shot is faked.
+- **Original audio.** The score and every sound effect are original ([AUDIO-SOURCES.md](AUDIO-SOURCES.md)).
 
-All MP4s use H.264 video, stereo AAC audio (−16 LUFS) and faststart.
-
-## How it was made
-
-- **Real game logic.** Every gameplay shot comes from a deterministic engine (`engine.js`). It handles soul queues, Mort's flight, grave matching, streak multipliers, coffee lives, the all-five bonus, the 1/1 and the dawn timer. Autoplay takes are rendered at 60 fps; the trailer is not a slideshow.
-- **Their art, untouched.** The board is their Deathly Offerings cemetery, and its five blank tombstones are cut out so the girls can rise from behind them. The cast, Mort, cameo portraits, the wordmark, the Mortuary and Orbituary art and Bella Saw are all official files from paxgothamista.xyz and @Pax_Gothamista. The only new pixels are effects, UI and type.
-- **Their lore.** It draws on the Death Registry (WL), Mass Death Registry (collabs), the Orbituary status check (Alive / Dead), Mort's fifth coffee, "every grave has a personality", the horror-villain 1/1s, and #RestInPax.
-- **Original audio.** The score and every sound effect are original; see [AUDIO-SOURCES.md](AUDIO-SOURCES.md).
-
-The leaderboard is a sample with placeholder handles, the X post is a mock-up, and no WL is granted. **Handle note:** `@Pax_Gothamistan` does not exist on X. This concept is for **[@Pax_Gothamista](https://x.com/Pax_Gothamista)** (artist [@MynddNFT](https://x.com/MynddNFT)).
+The leaderboard uses placeholder handles, the X post is a mock-up, and no WL is granted. **Handle note:** `@Pax_Gothamistan` does not exist on X. This concept is for **[@Pax_Gothamista](https://x.com/Pax_Gothamista)** (artist [@MynddNFT](https://x.com/MynddNFT)).
 
 Unofficial concept by Encore Studio. Not affiliated with or endorsed by Pax Gothamista. Pax Gothamista characters and art © Pax Gothamista. No post, DM or contact with the project was made.

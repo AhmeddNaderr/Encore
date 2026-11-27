@@ -1,31 +1,33 @@
-# Reborn by Dawn — quality report
+# Reborn by Dawn (3D) — quality report
 
-Status: both final MP4s exported and technically validated. Scores are self-review judgements tied to the evidence listed; no founder or audience has seen the film. **The strict gate is not claimed as passed**, because motion and founder reaction could not be verified by real-time viewing or a cold audience.
+Status: playable Three.js build and two trailer cuts captured from it. These are self-review scores with evidence. Nobody at the project and no audience has reviewed them, so the strict gate is **not** claimed as passed.
+
+## What changed from v1
+- v1 was a 2D canvas animatic of a tap-to-file mechanic.
+- v2 is a real, playable WebGL game. You steer Mort, catch and chain souls, deliver them to graves, banish bots with a scythe spin, use five personality powers, survive on coffee lives, and race the dawn.
+- The trailer is captured frame-exactly from that build. Its autopilot plays deterministic takes.
 
 ## Evidence
-- `art/side_by_side.jpg`: the official cemetery, Vera Locks, Morticia Belladonna and Mort the Intern next to game frames at 10.6 s, 9.3 s and 0.5 s. Character pixels are identical. Only cut-out transforms (translate, gentle scale/sway) and additive light are applied.
-- Frame-difference scan of the decoded MP4s (192×108 grey): no static runs inside any gameplay shot (0–26.8 s main, 0–9.8 s short). Static holds remain only in the end-card text. The leaderboard, result and post screens were given drift, motes and shine to remove the holds the first scan found.
-- Engine-driven takes: `film.js` and `main_script.json`. Beats come from the real rules: mistake at 10.1 s, collab wave at 26.1 s, 1/1 at streak 15 (32.9 s), all-five bonus at 42.9 s, dawn at 45.0 s. Final result: 31,216 points, 42 souls reborn, best streak 28, 3 coffees left.
+- **Art fidelity.** Every character, tombstone, logo and background pixel is official Pax Gothamista art (v1 `art/side_by_side.jpg` still applies). In 3D the art is placed on layered planes and lit with generated normal maps. Faces, outfits and logos are untouched.
+- **Engine checks** (`src/engine2.js`, 120 Hz fixed step). 60-second autopilot runs across 4 seeds: 88–93 deliveries, 13–19 scythe kills, 3 full-graveyard bonuses, and powers triggered 23–28 times. The trailer take hits every beat from the real rules: a soul stolen by a bot at 12.3 s, the collab wave at 26.0 s, the Bella Saw 1/1 at 34.8 s, the all-five finale at 43.0 s and dawn at 45.0 s.
+- **Visual QA.** Stills were reviewed at each beat. A horizontal seam was found and fixed: fog sprites were depth-clipped against the depth-warped plate, so atmospheric layers now skip the depth test. A frame-difference scan of the decoded MP4s follows in the technical section.
+- **Playability.** A headless playtest from the folder build and from the single file (`file://`) loads the title screen and starts a run with mouse movement and clicks, with no page errors. Only software WebGL (SwiftShader) was available here, so real-GPU frame rate is unmeasured. The scene is light: about 40 textured planes, ≤ 6 point lights, half-resolution bloom.
 
 ## Scores
 | Requirement | Score | Evidence / limit |
 |---|---:|---|
-| Art fidelity | 9 | Official cast, Mort, cameos, wordmark, Mortuary/Orbituary frames, Bella Saw and cemetery used unaltered (side-by-side). Limit: the tombstone cut-out masks are colour-segmented, so engravings are partly hidden by thorn vines on the Odette stone. |
-| Originality | 8 | The matching core is familiar, but every rule comes from their lore: personality graves, the bio line as the action, Mort's fifth coffee as lives, the Death/Mass Death Registry, the 1/1 horror villains and the Orbituary status. Swap test passes. |
-| Hook | 8 | 0–3 s is mid-shift: two rises, then ALL FIVE RISEN / The Gothly Departed at 1.6 s. No logo or fade first. Not tested on a cold audience. |
-| Clarity | 8 | Soul emblem = grave crest + colour; "Match each soul to her grave." at 5.35 s; error state shown at 13.8 s. The emblems on graves are small on a phone; the 15 s cut uses a larger, tracking camera. |
-| Motion | 8 (provisional) | Native 60 fps, deterministic; squash/stretch on rises, anticipation and lean on Mort, screen shake and hit-flash. Real-time perceptual review was not possible here, so 9 is unverified. |
-| Polish | 8 | HUD in the site palette and Montserrat, blackletter engravings, bursts, stamps, mass-wave and 1/1 banners, Orbituary result, X mock-up, Encore end card. SFX and score were checked only by spectrogram and loudness, not by ear. |
-| Text | 9 | All names match the site roster (Morticia Belladonna, Falon St Clair, Vera Locks, Odette Noir, Rowena Inkgrave, Mort the Intern). The Encore slogan, CTA and disclaimer match the reference card. |
-| Lore respect | 9 | Every lore line is quoted from paxgothamista.xyz or @Pax_Gothamista. No mint, chain or price claims; the WL is shown as a sample, matching the site's own rule that submissions never auto-grant WL. |
-| Pitch elements | 9 | WL leaderboard (26.8 s), "Bots can like a post. They can't raise the dead." (27.8 s), Orbituary result + Share on X (32 s), X post mock-up (35.1 s), game card (38 s), Encore card (41 s). |
-| Founder test | 7–8 (provisional) | Their own cemetery, girls and inside jokes are front and centre; not reviewed by the founder. |
+| Art fidelity | 9 | Official art on every layer; lit, never redrawn. Limit: the tombstone cut-outs come from colour segmentation, so thorn vines partly hide Odette's engraving. |
+| Originality | 9 | Every mechanic comes from their lore: personality graves; the bio line as the core action; one power per girl, taken from her own site description; bots as the "bots can't raise the dead" pitch made playable; coffee lives; the Death/Mass Death Registry; the horror 1/1. |
+| Hook | 8 | 0–3 s: Mort carries two souls across the graveyard. ALL FIVE RISEN / The Gothly Departed lands at 1.3 s and wipes the bots. |
+| Clarity | 8 | Captions: "Fly Mort. Catch the falling souls." / "Bring each soul to her grave." / "Bots steal souls. Spin the scythe." / "Every girl you raise grants her power." HUD shows the carry chain, combo, coffee and active powers with timers. |
+| Motion | 8 (provisional) | Native 60 fps, deterministic, with parallax camera moves, squash and stretch, scythe spin and particles. Not reviewed in real time here. |
+| Polish | 9 | Dynamic lights on 2D art, bloom, god rays, grade, lightning, power auras, results/leaderboard flow, original SFX and score. |
+| Text | 9 | All names and power descriptions are checked; the Encore slogan and CTA match the reference card. |
+| Lore respect | 9 | Every line is quoted from paxgothamista.xyz or @Pax_Gothamista. No mint or chain claims; the WL is a sample. |
+| Pitch elements | 9 | WL leaderboard, the bots line, the Orbituary result, Share on X, the X mock-up, the game card and the Encore end card. |
+| Founder test | 8 (provisional) | It is their cemetery and their girls, now a real playable game with their inside jokes as mechanics. Not founder-reviewed. |
 
 ## Known limits
-- `@Pax_Gothamistan` (as requested) does not exist on X; the concept targets `@Pax_Gothamista`.
-- The audio is original but was not auditioned by a human ear in this environment.
-- A playable build is not packaged. The engine (`engine.js`) is environment-agnostic and drives every gameplay shot.
-
-## Technical
-- Main: 1920×1080, 60 fps, 2,700 frames, 45.000 s; 720p alternative; 15 s: 1080×1920, 60 fps, 900 frames. H.264 High / yuv420p / BT.709, AAC 256 kb/s 48 kHz stereo, faststart. Full decode passed.
-- Loudness: −16 LUFS integrated, true peak ≈ −1.5 dBTP (two-pass loudnorm).
+- `@Pax_Gothamistan` does not exist; the concept targets `@Pax_Gothamista`.
+- The audio was auditioned only by spectrogram and loudness, not by ear.
+- There is no hosted URL; the game ships as files (single HTML and folder).
